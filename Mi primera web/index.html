@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dario Rivera · Mi primera web en la nube</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <main class="sheet">
+
+    <!-- Marcas de esquina estilo plano técnico -->
+    <span class="corner corner--tl" aria-hidden="true"></span>
+    <span class="corner corner--tr" aria-hidden="true"></span>
+    <span class="corner corner--bl" aria-hidden="true"></span>
+    <span class="corner corner--br" aria-hidden="true"></span>
+
+    <header class="status-bar">
+      <span class="status-bar__dot" aria-hidden="true"></span>
+      <span class="status-bar__text">STATUS · ONLINE</span>
+      <span class="status-bar__sep" aria-hidden="true">/</span>
+      <span class="status-bar__text status-bar__text--muted">REGION · cloud-01</span>
+    </header>
+
+    <section class="hero">
+
+      <div class="id-card">
+        <div class="id-card__photo">
+          <img src="img/Dario.jpeg" alt="Foto de Dario Rivera" width="220" height="220">
+        </div>
+
+        <span class="id-card__connector" aria-hidden="true"></span>
+
+        <ul class="id-card__specs">
+          <li><em>01</em>Ingeniería de Sistemas</li>
+          <li><em>02</em>Electiva Cloud Computing</li>
+          <li><em>03</em>Desplegado en la nube</li>
+        </ul>
+      </div>
+
+      <div class="hero__text">
+        <p class="eyebrow">// presentación personal</p>
+        <h1>Hola, soy<br><span class="hero__name">Dario Rivera</span></h1>
+        <p class="hero__role">Estudiante de Ingeniería de Sistemas · Electiva Cloud Computing</p>
+        <p class="hero__desc">Esta página está desplegada en la nube. Es mi primer paso escribiendo
+          infraestructura propia y viéndola en vivo, fuera de mi máquina local.</p>
+      </div>
+
+    </section>
+
+    <section class="deploy-log" aria-label="Registro de despliegue">
+      <div class="deploy-log__bar">
+        <span class="deploy-log__title">deploy.log</span>
+        <span class="deploy-log__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      </div>
+      <pre class="deploy-log__body"><code><span class="c-prompt">$</span> git push cloud main
+<span class="c-ok">✓</span> build completado
+<span class="c-ok">✓</span> activos optimizados
+<span class="c-ok">✓</span> dominio enlazado
+<span class="c-comment"># mi-primera-web</span> → <span class="c-status">estado: online</span></code></pre>
+    </section>
+
+    <footer class="footer">
+      <p>Construida línea por línea, subida a la nube por Dario Rivera.</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
