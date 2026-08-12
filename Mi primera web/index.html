@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dario Rivera · Mi primera web en la nube</title>
+  <title>Darío Rivera · Hoja de vida</title>
+  <meta name="description" content="Hoja de vida web de Darío Sebastián Rivera Sáenz, Ingeniero de Sistemas en formación y desarrollador Full Stack.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -15,7 +16,6 @@
 
   <main class="sheet">
 
-    <!-- Marcas de esquina estilo plano técnico -->
     <span class="corner corner--tl" aria-hidden="true"></span>
     <span class="corner corner--tr" aria-hidden="true"></span>
     <span class="corner corner--bl" aria-hidden="true"></span>
@@ -23,51 +23,229 @@
 
     <header class="status-bar">
       <span class="status-bar__dot" aria-hidden="true"></span>
-      <span class="status-bar__text">STATUS · ONLINE</span>
+      <span class="status-bar__text">STATUS · DISPONIBLE</span>
       <span class="status-bar__sep" aria-hidden="true">/</span>
-      <span class="status-bar__text status-bar__text--muted">REGION · cloud-01</span>
+      <span class="status-bar__text status-bar__text--muted">Tunja, Boyacá</span>
+
+      <nav class="status-bar__nav" aria-label="Navegación principal">
+        <a href="#perfil">Perfil</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#educacion">Educación</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </header>
 
+    <!-- ===== HERO ===== -->
     <section class="hero">
 
       <div class="id-card">
         <div class="id-card__photo">
-          <img src="img/Dario.jpeg" alt="Foto de Dario Rivera" width="220" height="220">
+          <img src="img/Dario.jpeg" alt="Foto de Darío Rivera" width="220" height="220">
         </div>
 
         <span class="id-card__connector" aria-hidden="true"></span>
 
         <ul class="id-card__specs">
           <li><em>01</em>Ingeniería de Sistemas</li>
-          <li><em>02</em>Electiva Cloud Computing</li>
-          <li><em>03</em>Desplegado en la nube</li>
+          <li><em>02</em>Último semestre</li>
+          <li><em>03</em>Full Stack Developer</li>
         </ul>
       </div>
 
       <div class="hero__text">
-        <p class="eyebrow">// presentación personal</p>
-        <h1>Hola, soy<br><span class="hero__name">Dario Rivera</span></h1>
-        <p class="hero__role">Estudiante de Ingeniería de Sistemas · Electiva Cloud Computing</p>
-        <p class="hero__desc">Esta página está desplegada en la nube. Es mi primer paso escribiendo
-          infraestructura propia y viéndola en vivo, fuera de mi máquina local.</p>
+        <p class="eyebrow">// hoja de vida</p>
+        <h1>Darío Sebastián<br><span class="hero__name">Rivera Sáenz</span></h1>
+        <p class="hero__role">Ingeniero de Sistemas en formación · Desarrollador Full Stack</p>
+        <p class="hero__desc">
+          Experiencia en desarrollo full stack, aplicaciones móviles multiplataforma y soporte
+          técnico empresarial. Manejo Flutter, Node.js, React y tecnologías backend, aplicando
+          arquitectura limpia y metodologías ágiles. Certificado SENA como Técnico en Sistemas
+          con distinción de Mejor Aprendiz.
+        </p>
+
+        <div class="hero__links">
+          <a class="btn btn--primary" href="https://www.linkedin.com/in/dario-rivera-3a674636a" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn" href="https://github.com/DarioRiverah" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn" href="mailto:dario42015@gmail.com">Escribirme ↗</a>
+        </div>
       </div>
 
     </section>
 
-    <section class="deploy-log" aria-label="Registro de despliegue">
+    <!-- ===== PERFIL ===== -->
+    <section class="block" id="perfil">
+      <h2 class="block__title"><span class="block__num">01</span>Perfil</h2>
+      <p class="block__lead">
+        Estudiante de último semestre de Ingeniería de Sistemas en la Universidad Santo Tomás,
+        Seccional Tunja. He desarrollado proyectos de punta a punta —desde APIs backend hasta
+        apps móviles publicadas— combinando arquitectura limpia, buenas prácticas de Git/GitHub
+        y una base sólida de soporte técnico ganada antes de dedicarme al desarrollo.
+      </p>
+    </section>
+
+    <!-- ===== EXPERIENCIA (estilo git log) ===== -->
+    <section class="block" id="experiencia">
+      <h2 class="block__title"><span class="block__num">02</span>Experiencia</h2>
+
+      <ol class="git-log">
+
+        <li class="commit">
+          <div class="commit__meta">
+            <span class="commit__hash">a3f9c21</span>
+            <span class="commit__date">feb–may 2026</span>
+          </div>
+          <h3 class="commit__msg">Desarrollador Full Stack · Transportadora de los Andes S.A.S.</h3>
+          <ul class="commit__body">
+            <li>Desarrollé de principio a fin una plataforma de transporte privado tipo Uber: API REST en Node.js/Express y app Flutter multiplataforma.</li>
+            <li>Implementé JWT, Socket.IO en tiempo real, Firebase Cloud Messaging, Zod, Multer y Prisma ORM sobre MySQL.</li>
+            <li>App con 3 roles (Admin, Conductor, Cliente), geolocalización en tiempo real, rutas con polylines, tarifas por sector, OTP y Clean Architecture con BLoC.</li>
+          </ul>
+        </li>
+
+        <li class="commit">
+          <div class="commit__meta">
+            <span class="commit__hash">7c2e6ab</span>
+            <span class="commit__date">ago–sep 2025</span>
+          </div>
+          <h3 class="commit__msg">Desarrollador Full Stack · Cuartel de Bombermans (proyecto académico)</h3>
+          <ul class="commit__body">
+            <li>Lideré el equipo de desarrollo bajo metodología Scrum, coordinando tareas, tiempos y entregables.</li>
+            <li>Construí una app Flutter/Dart con Firebase Firestore para gestión de proyectos y tareas en Grúas y Equipos S.A.S.</li>
+            <li>Publiqué la aplicación en Google Play para distribución y pruebas en dispositivos Android reales.</li>
+          </ul>
+        </li>
+
+        <li class="commit">
+          <div class="commit__meta">
+            <span class="commit__hash">f18d904</span>
+            <span class="commit__date">may–jun 2025</span>
+          </div>
+          <h3 class="commit__msg">Desarrollador Full Stack · CodeMaster (proyecto académico)</h3>
+          <ul class="commit__body">
+            <li>Lideré el equipo bajo metodología Scrum; backend en C#/.NET Core con OAuth 2.0.</li>
+            <li>Integré APIs externas (Judge0, ImgBB) e implementé autenticación y autorización segura.</li>
+          </ul>
+        </li>
+
+        <li class="commit">
+          <div class="commit__meta">
+            <span class="commit__hash">01b6e4f</span>
+            <span class="commit__date">jul 2021–jul 2022</span>
+          </div>
+          <h3 class="commit__msg">Soporte Técnico IT · ROLAGRO</h3>
+          <ul class="commit__body">
+            <li>Brindé soporte técnico presencial y remoto en hardware, software y conectividad de red.</li>
+            <li>Instalé, configuré y mantuve equipos de cómputo, impresoras, switches y dispositivos de red.</li>
+            <li>Diagnostiqué y resolví incidencias de primer y segundo nivel, reduciendo tiempos de inactividad operativa.</li>
+          </ul>
+        </li>
+
+      </ol>
+    </section>
+
+    <!-- ===== EDUCACIÓN ===== -->
+    <section class="block" id="educacion">
+      <h2 class="block__title"><span class="block__num">03</span>Educación</h2>
+
+      <ul class="edu-list">
+        <li class="edu-item">
+          <div class="edu-item__head">
+            <h3>Ingeniería de Sistemas</h3>
+            <span class="edu-item__date">jul 2022 – actualidad</span>
+          </div>
+          <p class="edu-item__org">Universidad Santo Tomás, Seccional Tunja</p>
+          <p class="edu-item__note">En curso · último semestre · 4 materias pendientes</p>
+        </li>
+
+        <li class="edu-item">
+          <div class="edu-item__head">
+            <h3>Técnico en Sistemas</h3>
+            <span class="edu-item__date">jul 2022</span>
+          </div>
+          <p class="edu-item__org">Servicio Nacional de Aprendizaje — SENA, Chiquinquirá</p>
+          <p class="edu-item__note">Honores: Mejor Aprendiz SENA</p>
+        </li>
+
+        <li class="edu-item">
+          <div class="edu-item__head">
+            <h3>Bachiller Técnico, especialidad en Sistemas</h3>
+            <span class="edu-item__date">dic 2020</span>
+          </div>
+          <p class="edu-item__org">I.E.T. Antonio Nariño, Villa de Leyva</p>
+          <p class="edu-item__note">Honores: mejor proyecto de grado en la especialidad de Sistemas</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section class="block" id="habilidades">
+      <h2 class="block__title"><span class="block__num">04</span>Habilidades</h2>
+
+      <div class="skills">
+        <div class="skills__group">
+          <p class="skills__label">Frontend &amp; Mobile</p>
+          <ul class="tags">
+            <li>React</li><li>JavaScript</li><li>TypeScript</li><li>Flutter</li><li>Dart</li><li>BLoC</li>
+          </ul>
+        </div>
+
+        <div class="skills__group">
+          <p class="skills__label">Backend &amp; Datos</p>
+          <ul class="tags">
+            <li>Node.js</li><li>Express</li><li>C#</li><li>.NET Core</li><li>Python</li><li>SQL</li>
+            <li>MySQL</li><li>SQL Server</li><li>Firebase Firestore</li><li>Prisma ORM</li>
+          </ul>
+        </div>
+
+        <div class="skills__group">
+          <p class="skills__label">Tiempo real &amp; Seguridad</p>
+          <ul class="tags">
+            <li>REST APIs</li><li>Socket.IO</li><li>JWT</li><li>OAuth 2.0</li><li>FCM</li>
+          </ul>
+        </div>
+
+        <div class="skills__group">
+          <p class="skills__label">IA &amp; Automatización</p>
+          <ul class="tags">
+            <li>LangChain</li><li>LangGraph</li><li>n8n</li>
+          </ul>
+        </div>
+
+        <div class="skills__group">
+          <p class="skills__label">Prácticas &amp; herramientas</p>
+          <ul class="tags">
+            <li>Clean Architecture</li><li>Scrum</li><li>Git</li><li>GitHub</li><li>Vercel</li><li>Google Play Console</li>
+          </ul>
+        </div>
+
+        <div class="skills__group">
+          <p class="skills__label">Soporte técnico</p>
+          <ul class="tags">
+            <li>Redes</li><li>Hardware</li><li>Soporte remoto y presencial</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="deploy-log" id="contacto" aria-label="Información de contacto">
       <div class="deploy-log__bar">
-        <span class="deploy-log__title">deploy.log</span>
+        <span class="deploy-log__title">contacto.sh</span>
         <span class="deploy-log__dots" aria-hidden="true"><i></i><i></i><i></i></span>
       </div>
-      <pre class="deploy-log__body"><code><span class="c-prompt">$</span> git push cloud main
-<span class="c-ok">✓</span> build completado
-<span class="c-ok">✓</span> activos optimizados
-<span class="c-ok">✓</span> dominio enlazado
-<span class="c-comment"># mi-primera-web</span> → <span class="c-status">estado: online</span></code></pre>
+      <pre class="deploy-log__body"><code><span class="c-prompt">$</span> whoami
+Darío Sebastián Rivera Sáenz — Tunja, Boyacá
+
+<span class="c-prompt">$</span> cat contacto.txt
+email:    <a href="mailto:dario42015@gmail.com">dario42015@gmail.com</a>
+linkedin: <a href="https://www.linkedin.com/in/dario-rivera-3a674636a" target="_blank" rel="noopener">/in/dario-rivera-3a674636a</a>
+github:   <a href="https://github.com/DarioRiverah" target="_blank" rel="noopener">/DarioRiverah</a>
+<span class="c-comment"># estado</span> → <span class="c-status">disponible para nuevas oportunidades</span></code></pre>
     </section>
 
     <footer class="footer">
-      <p>Construida línea por línea, subida a la nube por Dario Rivera.</p>
+      <p>Hoja de vida construida y desplegada en la nube por Darío Rivera.</p>
     </footer>
 
   </main>
