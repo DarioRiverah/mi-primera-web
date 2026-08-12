@@ -42,9 +42,9 @@ Luego abre `http://localhost:8000`.
 
 ## Evidencias
 
-- Pantallazo 1 — Repositorio en GitHub: `![Repositorio](ruta-a-tu-imagen.png)`
-- Pantallazo 2 — Deploy exitoso en Vercel: `![Deploy](ruta-a-tu-imagen.png)`
-- Pantallazo 3 — Página funcionando en la URL pública: `![Página](ruta-a-tu-imagen.png)`
+- Pantallazo 1 — Repositorio en GitHub: ![Repositorio](Mi%20primera%20web/img/GitHubCapture.png)
+- Pantallazo 2 — Deploy exitoso en Vercel: ![Deploy](Mi%20primera%20web/img/DeployVercel.png)
+- Pantallazo 3 — Página funcionando en la URL pública: ![Página](Mi%20primera%20web/img/DeployWeb.png)
 
 ---
 
